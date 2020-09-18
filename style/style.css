@@ -1,0 +1,137 @@
+body
+{
+    margin: 0px;padding:0px;
+    background: #020513;
+    color: #fff;
+    overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1{font-family: 'Montserrat', sans-serif;font-size: 50px;margin: 120px 0px 0px 4%;}
+p{font-family: 'Roboto', sans-serif;}
+
+section
+{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #020513;
+    z-index: 111;
+}
+
+*{-webkit-box-sizing: border-box;box-sizing: border-box;}
+
+
+
+
+nav
+{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    background: transparent;
+    z-index: 99999999;
+}
+
+nav ul
+{
+    list-style-type: none;
+    float: right;
+    margin: 0px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin: -2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; 
+}
+
+nav ul li a.active
+{
+    margin: 0px 20px 45px 20px;
+    border-bottom: 4px solid #fbff00d4;
+    
+}
+
+nav ul li a:not(.active):hover
+{
+    padding-bottom: 30px;
+    border-bottom: 4px solid #0000004d;
+}
+
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 27px 7px;
+    display: inline-block;
+    
+    -webkit-transition: 0.2s; 
+    transition: 0.2s;
+
+}
+
+
+
+
+
+
+
+
+
+.content
+{
+    background: #951005;
+    padding: 40px 21px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: -14px;
+    z-index: -1;
+    top: 181px;
+    right: 0px;
+    width: 95%;
+}
+.content p
+{
+    width: 75%;
+    margin-bottom: 40px;
+}
+.content .store
+{
+    width: 290px;
+}
+.content .sign
+{
+    position: absolute;
+    bottom: 0px;
+    right: 25%;
+    opacity: 0.5;
+}
+
+.mickyImg
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+}
+
+@media(max-width: 900px) {
+    .content p{ width: 90%}
+    .content .store{margin-bottom: 100px;}
+    .content .sign{left: 16px;}
+    h1{font-size: 45px;}
+    .content{top: 179px;}
+}
+@media(max-width: 620px) {
+    .content p{ width: 100%;font-size: 15px;}
+    .content .store{margin-bottom: 100px;}
+    .content .sign{left: 16px;}
+    h1{font-size: 30px;}
+    .content{top: 163px;}
+}
